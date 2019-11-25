@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Setando tamanhos</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#b1").click(function (){
+                    $("#div1").width(300);
+                    $("#div1").height(300);
+                });
+                $("#b2").click(function (){
+                    $("#div1").width(500);
+                    $("#div1").height(500);
+                });
+            });
+        </script>
+        <style type="text/css">
+            #div1{
+                background-color: aquamarine;
+                width: 100px;
+                height: 100px;
+            } 
+        </style>
+    </head>
+    <body>
+        <h1>Título</h1>
+        <div id="div1"></div>
+        <button id="b1">300x300</button>
+        <button id="b2">500x500</button>
+    </body>
+</html>

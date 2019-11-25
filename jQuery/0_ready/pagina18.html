@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Setando tamanhos</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <style>
+                .vermelho{
+                    color: red;
+                }
+                .azul{
+                    color: blue;
+                }
+            </style>
+        <script>
+            $(document).ready(function () {
+                $("button#1").click(function (){
+                    $("p").toggleClass("vermelho");
+                });
+                $("button#2").click(function (){
+                    $("p").toggleClass("azul");
+                 });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Toggle Class</h1>
+        <p>Isso é um parágrafo</p>
+        <p>Isso é outro parágrafo</p>
+        <button id="1">Vermelho</button>
+        <button id="2">Azul</button>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alterando vários atributos</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("a").attr({
+                    title: "Todos os links são iguais!",
+                    href: "pagina1.html"
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Página 2</h1>
+        <a href="http://www.devisate.com.br">Link</a><br>
+        <a href="http://www.google.com.br">Outro Link</a>
+    </body>
+</html>

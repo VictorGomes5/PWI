@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Setando tamanhos</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <style>
+                .vermelho{
+                    color: red;
+                }
+                .borda{
+                    border: solid blue;
+                }
+            </style>
+        <script>
+            $(document).ready(function () {
+                $("button#1").click(function (){
+                    $("p").addClass("vermelho borda");
+                });
+                $("button#2").click(function (){
+                    $("p").removeClass("vermelho borda");
+                 });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Get e Set com CSS</h1>
+        <p>Isso é um parágrafo</p>
+        <p>Isso é outro parágrafo</p>
+        <button id="1">Adicionar classe</button>
+        <button id="2">Remover classe</button>
+    </body>
+</html>

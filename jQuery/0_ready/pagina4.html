@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alterando atributo ao clicar</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <script>
+            var preto = true;
+            $(document).ready(function () {
+                $("button").click(function () {
+                    if(preto == true){
+                        $("html").css("background", "black");
+                        $("h1").css("color", "white");
+                        preto = false;
+                    } 
+                    else{
+                        $("html").css("background", "white");
+                        $("h1").css("color", "black");
+                        preto = true;
+                    }
+                    
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Página 4</h1>
+        <button>Alterar Cor de Fundo</button>
+    </body>
+</html>

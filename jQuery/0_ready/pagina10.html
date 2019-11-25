@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Trocando conteúdo</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    alert("Valor: " + $("#nome").val() );
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Nome: <input type="text" id="nome" value="Marquito"></p>
+        <button>Ver Valor</button>
+    </body>
+</html>

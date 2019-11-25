@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Chamando uma função</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <style type="text/css">
+            iframe{
+                width: 400px;
+                height: 100px;
+            }
+        </style>
+        <script>
+            $(document).ready(function (){
+                console.log("Documento carregado. ");
+            });
+            $(window).on("load", function () {
+                console.log("Janela carregada. ");
+            });
+        </script>
+    </head>
+    <body>
+        <iframe src="http://www.devisate.com.br"></iframe>
+    </body>
+</html>

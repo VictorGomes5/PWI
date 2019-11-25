@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Setando tamanhos</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#divAzul").click(function (){
+                    $("#divM").css("background", "blue");
+                });
+                $("#divAmarelo").click(function (){
+                    $("#divM").css("background", "yellow");
+                });
+                $("#divVerde").click(function (){
+                    $("#divM").css("background", "green");
+                });
+                $("#divRoxo").click(function (){
+                    $("#divM").css("background", "purple");
+                });
+                $("#divBranco").click(function (){
+                    $("#divM").css("background", "white");
+                });
+                $("#divVermelho").click(function (){
+                    $("#divM").css("background", "red");
+                });
+                $("#divCiano").click(function (){
+                    $("#divM").css("background", "cyan");
+                });
+                $("#divRosa").click(function (){
+                    $("#divM").css("background", "magenta");
+                });
+                $("#divPreto").click(function (){
+                    $("#divM").css("background", "black");
+                });
+                $("#divM").click(function (){
+                    $("html").hide(250);
+                });
+            });
+        </script>
+        <style type="text/css">
+            #divM{
+                background-color: white;
+                width: 507px;
+                height: 507px;
+                margin-bottom: 33px;
+                border: 1px solid black;
+            }
+            #divAzul{
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+                margin-right: 33px;
+                float: left;
+                border: 1px solid black;
+            }
+            #divAmarelo{
+                background-color: yellow;
+                width: 100px;
+                height: 100px;
+                margin-right: 33px;
+                float: left;
+                border: 1px solid black;
+            }
+            #divVerde{
+                background-color: green;
+                width: 100px;
+                height: 100px;
+                margin-right: 33px;
+                float: left;
+                border: 1px solid black;
+            }
+            #divRoxo{
+                background-color: purple;
+                width: 100px;
+                height: 100px;
+                margin-right: 33px;
+                float: left;
+                border: 1px solid black;
+            }
+            #divBranco{
+                background-color: white;
+                width: 100px;
+                height: 100px;
+                margin-right: 33px;
+                float: left;
+                border: 1px solid black;
+            }
+            #divVermelho{
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                margin-right: 33px;
+                position:absolute;
+                left: 548px;
+                top: 484px;
+                border: 1px solid black;
+            }
+            #divCiano{
+                background-color: cyan;
+                width: 100px;
+                height: 100px;
+                margin-right: 33px;
+                position:absolute;
+                left: 548px;
+                top: 347px;
+                border: 1px solid black;
+            }
+            #divRosa{
+                background-color: magenta;
+                width: 100px;
+                height: 100px;
+                margin-right: 33px;
+                position:absolute;
+                left: 548px;
+                top: 217px;
+                border: 1px solid black;
+            }
+            #divPreto{
+                background-color: black;
+                width: 100px;
+                height: 100px;
+                margin-right: 33px;
+                position:absolute;
+                left: 548px;
+                top: 80px;
+                border: 1px solid black;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>TROCAR COR DE UMA DIV</h1>
+        <div id="divM"></div>
+        <div id="divAzul"></div>
+        <div id="divAmarelo"></div>
+        <div id="divVerde"></div>
+        <div id="divRoxo"></div>
+        <div id="divBranco"></div>
+        <div id="divVermelho"></div>
+        <div id="divCiano"></div>
+        <div id="divRosa"></div>
+        <div id="divPreto"></div>
+    </body>
+</html>

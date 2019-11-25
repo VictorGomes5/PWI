@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Setando tamanhos</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <style>
+                .vermelho{
+                    color: red;
+                }
+                .azul{
+                    color: blue;
+                }
+            </style>
+        <script>
+            $(document).ready(function () {
+				$("#setNome").click(function () {
+                    var nome = $("input[name='nome']");
+                    nome.css("backgroundColor", "yellow");
+				});
+				$("#setText").click(function () {
+                    var nome = $("input[type='text']");
+                    nome.css("backgroundColor", "red");
+				});
+				$("#setType").click(function () {
+                    var nome = $("input[type='email']");
+                    nome.css("backgroundColor", "pink");
+				});
+				$("#Limpar").click(function () {
+                    $("input").css("backgroundColor", "white");
+				});
+            });
+        </script>
+    </head>
+    <body>
+		<form action="">
+			nome: <input type="text" name="nome" /><br>
+			cidade: <input type="text" name="cidade" /><br>
+			email: <input type="email" name="email" /><br>
+		</form>
+
+		<button id="setNome">Set Campo Nome</button>
+		<button id="setText">Set Tipo Do Texto</button>
+		<button id="setType">Set Tipo Email</button>
+		<button id="Limpar">Limpar</button>
+    </body>
+</html>-

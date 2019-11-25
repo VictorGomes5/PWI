@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Setando tamanhos</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <style>
+                .vermelho{
+                    color: red;
+                }
+                .azul{
+                    color: blue;
+                }
+            </style>
+        <script>
+            $(document).ready(function () {
+                var p = $("p")
+				$("button").click(function () {
+                    if(p.hasClass("vermelho")){
+                        p.removeClass("vermelho");
+                        p.addClass("azul");
+                    }else if(p.hasClass("azul")){
+                        p.removeClass("azul");
+                    }else{
+                        p.addClass("vermelho")
+                    }
+				});
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Toggle Class</h1>
+        <p>Isso é um parágrafo</p>
+        <p>Isso é outro parágrafo</p>
+        <button id="1">Mudar</button>
+    </body>
+</html>

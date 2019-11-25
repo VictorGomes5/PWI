@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Escondendo atributo ao clicar</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    $("#test").hide(1000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Página 6</h1>
+        <h2>Ocultar o objeto com o id="test" ao clicar no botão</h2>
+        <p>Isso é um parágrafo</p>
+        <p id="test">Isso é outro parágrafo</p><br>
+        <button>Ocultar</button>
+    </body>
+</html>

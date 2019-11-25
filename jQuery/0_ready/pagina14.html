@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Setando tamanhos</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("img").click(function (){
+					var caminho = $(this).attr("src");
+                    $("#principal").attr("src", caminho);
+                });
+            });
+		</script>
+		<style type="text/css">
+			.divcor{
+				width: 100px;
+				height: 100px;
+				margin-right: 25px; 
+				float: left;
+			}
+			#divCor0{
+				width: 475px;
+				height: 475px;
+				margin-bottom: 25px;
+			}
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+		<h1>TROCAR COR DE UMA DIV</h1>
+		<div id="divCor0"><img id="principal" width="475px" height="475px" src="img/cor0.png"></div>
+        <div class="divcor"><img src="img/cor1.png"></div>
+        <div class="divcor"><img src="img/cor2.png"></div>
+        <div class="divcor"><img src="img/cor3.png"></div>
+        <div class="divcor"><img src="img/cor4.png"></div>
+    </body>
+</html>

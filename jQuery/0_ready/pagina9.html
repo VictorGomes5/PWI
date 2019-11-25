@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pegando conteúdo</title>
+        <script src="../JS/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#b1").click(function () {
+                    alert("Texto: " + $("p").text() );
+                });
+                $("#b2").click(function () {
+                    alert("HTML: " + $("p").html() );
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Texto usando <b>Negrito</b></p>
+        <button id="b1">Ver Text</button>
+        <button id="b2">Ver HTML</button>
+    </body>
+</html>
